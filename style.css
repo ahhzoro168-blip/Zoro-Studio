@@ -1,0 +1,193 @@
+/* Main Application Background & Text Tone Colors */
+.stApp {
+    background-color: #12131C !important;
+    color: #ffffff;
+}
+
+/* --- THE ACCENTED HEADERS CUSTOM CLASSES --- */
+.custom-accent-header {
+    color: #FFFFFF !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    border-bottom: 2px solid #FF4B4B !important;
+    padding-bottom: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Main Input Workspace Area (Top large script text block) */
+div.stTextArea textarea {
+    background-color: #1E1F2A !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #2D3042 !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+}
+
+/* Global style for ALL inline dynamic input fields */
+div.stTextInput input {
+    background-color: #1E1F2A !important;
+    color: #E2E4EC !important;
+    border: 1px solid #2D3042 !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+}
+
+/* Main Interactive Grid Row cards layout container */
+.studio-row-card {
+    background-color: #1A1B26 !important;
+    border-radius: 12px !important;
+    padding: 18px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    border: 1px solid #252736 !important;
+}
+
+/* Custom Sidebar Character Dividers */
+.sidebar-divider {
+    border-top: 1px solid #2D3042 !important;
+    margin: 15px 0 !important;
+    opacity: 0.6;
+}
+
+/* Styled color for character section headers in sidebar */
+.character-title {
+    color: #FF4B4B !important;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+/* Ensure sidebar input labels have clean space layout alignment padding */
+.stSidebar div.stTextInput label {
+    font-size: 14px !important;
+    color: #8A8EAD !important;
+    margin-bottom: 0px !important;
+}
+
+/* Style for the Sidebar Deletion Buttons */
+div.stSidebar div.element-container button[key^="side_del_btn_"] {
+    background-color: transparent !important;
+    border: 1px solid #3A3D52 !important;
+    color: #A2A6BC !important;
+    font-size: 13px !important;
+    margin-top: 5px !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+div.stSidebar div.element-container button[key^="side_del_btn_"]:hover {
+    background-color: #EF4444 !important;
+    border: 1px solid #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+/* Custom styling to integrate the drag & drop file upload widget into the dark theme sidebar */
+div.stSidebar div[data-testid="stFileUploader"] {
+    background-color: #1E1F2A !important;
+    border: 1px dashed #3A3D52 !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    margin-bottom: 12px !important;
+}
+
+/* --- FORCE EXPANDER WRAPPER TO DARK THEME BACKGROUNDS --- */
+div[data-testid="stExpander"] {
+    background-color: #1A1B26 !important;
+    border: 1px solid #252736 !important;
+    border-radius: 12px !important;
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+div[data-testid="stExpander"] summary {
+    background-color: #1A1B26 !important;
+}
+
+/* Fix expander text to remain crisp white */
+div[data-testid="stExpander"] summary p {
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+div[data-testid="stExpander"] summary:hover p {
+    color: #FF4B4B !important;
+}
+
+/* Style the CFG Badge pill exactly like your design blueprint prototype layout */
+.cfg-badge-lbl {
+    background-color: #FF4B4B;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Custom hint description typography rules inside advanced layouts */
+.adv-hint-text {
+    font-size: 14px !important;
+    color: #A2A6BC !important;
+    margin-top: 2px !important;
+    margin-bottom: 8px !important;
+}
+
+/* --- FIX: FULL-WIDTH PRIMARY BUTTON STYLING (Process Full Script) --- */
+div.element-container button[data-testid="baseButton-primary"] {
+    background-color: #FF4B4B !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    padding: 10px 0px !important;
+    height: 48px !important;
+    width: 100% !important;
+    transition: background-color 0.2s ease;
+}
+
+div.element-container button[data-testid="baseButton-primary"]:hover {
+    background-color: #FF6B6B !important;
+}
+
+/* Custom properties to blend Streamlit Tabs into the Zoro Dark Theme */
+button[data-baseweb="tab"] {
+    color: #8A8EAD !important;
+    font-size: 20px !important;       /* Increased from 16px to 20px for a bigger look */
+    font-weight: 600 !important;       /* Made font clearer and bolder */
+    padding: 14px 28px !important;     /* Added more padding around the text to make the buttons physically larger */
+    background-color: transparent !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Selected Tab Styling Rules */
+button[aria-selected="true"] {
+    color: #FF4B4B !important;
+    border-bottom-color: #FF4B4B !important;
+    font-weight: 700 !important;       /* Extra bold highlight when active */
+}
+
+/* Hover State adjustments */
+button[data-baseweb="tab"]:hover {
+    color: #FF6B6B !important;
+}
+
+/* Target the icon emojis inside the tabs specifically to ensure they match size scale */
+button[data-baseweb="tab"] p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+.stSidebar h2 {
+    font-family: sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.5px !important;
+}
